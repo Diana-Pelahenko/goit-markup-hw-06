@@ -227,6 +227,32 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     pointer-events: auto;
 }
 
+
+
+
+
+
+
+.mobile-menu-container {
+    position: relative;
+    /* Задаємо відносне позиціонування для контейнера */
+    padding-top: 72px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 .mobile-menu-container{
     position: relative;
     padding-top: 72px;
@@ -257,6 +283,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
              stroke: #2e2f42;
       
 }
+
+
 .btn-close-menu{
     fill: #2e2f42;
     background: none;
@@ -269,10 +297,14 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
         fill: #2e2f42;
         position: center;
         position: absolute;
-       
-           
+
+
+        
            
 }
+
+
+
 .mobile-menu-nav{
 margin-bottom: auto;
 }
@@ -424,4 +456,217 @@ flex-direction: column;
 .mobile-menu{
 display: none;
 }
+}
+
+.section-line{
+padding: 96px 0;
+}
+
+
+
+
+
+
+
+
+.section-line {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+@media screen and ((min-width: 767px)) {
+    .section-line {
+        padding: 120px 0;
+    }
+        .section-text {
+            max-width: 496px;
+            
+        }
+    
+        .section-line {
+            max-width: 767px;
+        }
+    
+        .section-text {
+            font-size: 56px;
+            margin-bottom: 36px;
+        }
+}
+
+@media screen and ((min-width: 1157px)) {
+    .section-line {
+        max-width: 1440px;
+    }
+.section-text{
+    font-weight: 700;
+        font-size: 56px;
+        
+        
+}
+}
+
+
+
+
+
+.section-text{
+    max-width: 216px;
+        margin: 0 auto;
+        font-size: 36px;
+            line-height: 1.11111;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 72px;
+                
+}
+
+@media screen and ((min-width: 767px)) {
+    .section-text {
+                font-size: 56px;
+        max-width: 496px;}
+    }
+@media screen and ((min-width: 1157px)) {
+    .hero-title {
+        margin-bottom: 48px;
+    }
+}
+
+
+
+.section-button{
+    display: block;
+        background: #4d5ae5;
+        cursor: pointer;
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border-radius: 4px;
+        padding: 16px 32px;
+        margin: 0 auto;
+    
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-button:hover ,
+.section-button:focus {
+    background-color: #404bbf;
+}
+
+
+
+
+
+
+/* section2 */
+
+.section-info{
+            padding: 96px 0;
+       
+}
+
+
+    .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+}
+.info-list{
+    display: flex;
+    justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        padding: 0;
+            width: 100%;
+                
+}
+@media screen and ((min-width: 767px)) {
+    .info-list {
+            column-gap: 24px;
+        }
+}
+
+
+@media screen and ((min-width: 767px))
+{ 
+    .info-item{
+    width: calc((100% - 24px) / 2);}
+}
+
+@media screen and ((min-width: 1157px)) {
+    .info-item {
+        width: calc((100% - 72px) / 4);
+    }
+}
+
+.icons-list{
+    display: none;
+}
+
+@media screen and ((min-width: 1157px)){
+
+    .icons-list {
+            border: 1px solid var(--light-slate);
+            border-radius: 4px;
+            background: #f4f4fd;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+        }
+}
+
+.page-our{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 8px;
+        
+}
+
+@media screen and ((min-width: 767px)){
+    .page-our {
+            text-align: start;
+        }
+}
+
+@media screen and ((min-width: 1157px)){
+    .page-our {
+        font-weight: 500;
+            font-size: 20px;
+    }
+
+   
+}
+
+.item-our{
+    font-family: "Roboto",
+        sans-serif;;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
 }
