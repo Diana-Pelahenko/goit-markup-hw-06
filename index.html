@@ -20,7 +20,7 @@
     <header class="page-header">
         <div class="container header-conteiner">
         <nav class="header-nav">
-            <!-- Логотип з посиланням -->
+           
             <a class="logo header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link current" href="./index.html">Studio</a></li>
@@ -38,18 +38,87 @@
                 </li>
             </ul>
          </address>
+
+         <button class="burger-btn button" type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+         </button>
     </div> 
+    <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+            <button class="mobile-menu-close">
+                <svg class="btn-close-menu" width="8" height="8">
+                    <use href="./images/icons.svg#icon-closed"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+                <ul class="mobile-list">
+                    <li class="nav-menu-mobile-one">
+                        <a href="./index.html" class="mobile-link">Studio</a>
+                    </li>
+                    <li class="nav-menu-mobile"><a class="menu-link" href="">Portfolio</a></li>
+                    <li class="nav-menu-mobile"><a class="menu-link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address-mobile-menu">
+                    <ul class="mobile-address-list">
+                        <li class="contacts-menu">
+                            <a class="contacts-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="contacts-memu">
+                            <a class="contacts-menu-email" href="mailto:info@devstudio.com" class="mobile-address-active">info@devstudio.com</a>
+                        </li>
+                        
+                    </ul>
+            </address>
+            <div class="mobile-icons">
+                <ul class="mobile-social-icons">
+                    <li class="icon-mob-menu">
+                        <a href="#" class="social-links">
+                            <svg width="24" height="24" class="icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-mob-menu">
+                        <a href="#" class="social-links">
+                            <svg width="24" height="24" class="icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-mob-menu">
+                        <a href="#" class="social-links">
+                            <svg width="24" height="24" class="icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-mob-menu">
+                        <a href="#" class="social-links">
+                            <svg width="24" height="24" class="icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
     </header>
 
     <main>
-        <section class="section-line">
+        <section class="section-line hidden">
             <div class="container">
             <h1 class="section-text">Effective Solutions for Your Business</h1>
             <button class="section-button" type="button">Order Service</button>
              </div>
      </section>
 
-        <section class="section-info">
+        <section class="section-info hidden">
             <div class="container">
             <h2 class="info-our">Core Principles</h2>
             <ul class="info-list">
@@ -97,7 +166,7 @@
             </div>
         </section>
 
-        <section class="our-team">
+        <section class="our-team hidden">
             <div class="container">
             <h2 class="team-page team-title">Our Team</h2>
             <ul class="team-list">
@@ -265,7 +334,7 @@
             </div>
         </section>
 
-        <section class="our-portfolio">
+        <section class="our-portfolio hidden">
             <div class="container">
             <h2 class="page-portfolio">Our Portfolio</h2>
             <ul class="portfolio-list">
@@ -357,7 +426,7 @@
         </section>
     </main>
 
-    <footer class="our-footer">
+    <footer class="our-footer hidden">
         <div class="container footer-all">
         <div class="container-footer-logo">
         <a class="logo footer-logo" href="./index.html"
@@ -424,7 +493,7 @@
 
 
 
-<div class="backdrop is-open">
+<div class="backdrop is-open hidden">
     <div class="modal">
         <button class="modal-closed-button" type="button">
             <svg class="icon-button-closed" width="8" height="8">
