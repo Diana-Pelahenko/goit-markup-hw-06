@@ -955,15 +955,16 @@ padding: 96px 0;
 .our-footer {
     background-color: #2e2f42;
     padding: 96px 0;
+   
 }
 
 .footer-all {
     display: flex;
     flex-direction: column;
-    /* Розташування в стовпець на мобільних за замовчуванням */
+ 
     gap: 72px;
     align-items: center;
-    /* Центрування блоків по центру на мобільних */
+
 }
 
 @media screen and (min-width: 768px) {
@@ -971,7 +972,7 @@ padding: 96px 0;
         flex-direction: row;
         flex-wrap: wrap;
         /* justify-content: center; */
-        margin-left: 108px;
+       
         gap: 24px;
         align-items: flex-start;
        
