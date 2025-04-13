@@ -482,7 +482,7 @@ padding: 96px 0;
 .section-line {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people-office1.jpg);
+        url(../images/hero/dark-bg-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1891,21 +1891,25 @@ padding: 96px 0;
 
 
 
-@media (min-resolution: 2x) {
+ @media (min-resolution: 2x) {
     .section-line {
+        
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/dark-bg-min.jpg);
     }
-}
+} 
 
-@media (min-width: 767px) {
+
+
+ @media (min-width: 767px) {
     .section-line {
+        
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/dark-bg-min.jpg)
     }
-}
+} 
 
 @media (min-width: 767px) and (min-resolution: 2x) {
     .section-line {
@@ -1913,16 +1917,8 @@ padding: 96px 0;
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/dark-bg@2x-min.jpg);
     }
-}
+} 
 
-@media (min-width: 1157px) {
-    .section-line {
-       
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg.jpg);
-    }
-}
 
 @media (min-width: 1157px) and (min-resolution: 2x) {
     .section-line {
@@ -1930,4 +1926,4 @@ padding: 96px 0;
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/dark-bg@2x-min.jpg);
     }
-}
+} 
