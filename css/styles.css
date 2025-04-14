@@ -62,6 +62,20 @@ a {
     }
 }
 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* HEADER */
 
 .page-header {
@@ -510,134 +524,15 @@ a {
 
 .section-line {
     padding: 96px 0;
-}
-
-@media screen and ((min-width: 767px)) {
-    .section-line {
-        padding: 120px 0;
-    }
-}
-
-@media screen and ((min-width: 1157px)) {
-    .section-line {
-        padding: 120px 0;
-    }
-}
-
-
-
-
-
-
-
-.section-line {
-    background-color: #2e2f42;
-    padding: 188px 0;
-    text-align: center;
-}
-
-
-.section-text {
-    max-width: 496px;
-    margin: 0 auto 48px;
-    color: #fff;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-}
-
-.section-button {
-    padding: 16px 32px;
-    background-color: #4d5ae5;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    transition: background-color 250ms ease;
-}
-
-.section-button:hover,
-.section-button:focus {
-    background-color: #404bbf;
-}
-
-/* Планшети: 768px - 1157px */
-@media screen and (max-width: 1157px) {
-    .section-line {
-        padding: 112px 0;
-        
-        
-    }
-
-    .section-text {
-        font-size: 40px;
-    }
-}
-
-
-
-
-
-
-/* Мобільні пристрої: до 767px */
-@media screen and (max-width: 767px) {
-    .section-line {
-        padding: 96px 0;
-    }
-
-    .section-text {
-        font-size: 36px;
-        padding: 0 20px;
-    }
-
-    .section-button {
-        width: 100%;
-        max-width: 200px;
-    }
-}
-
-.section-line {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 188px 0;
-    text-align: center;
-}
-
-@media (min-resolution: 192dpi) {
-    .section-line {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg@2x.jpg');
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section-line {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/hero-bg-mobile.jpg);
+        url(../images/people-office1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 320px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 @media screen and ((min-width: 767px)) {
     .section-line {
@@ -646,10 +541,11 @@ a {
 
     .section-text {
         max-width: 496px;
+
     }
 
     .section-line {
-        padding: 112px 0;
+        max-width: 767px;
     }
 
     .section-text {
@@ -663,17 +559,70 @@ a {
         max-width: 1440px;
     }
 
-    
-
-    .section-line {
-        padding: 188px 0;
-    }
-
     .section-text {
+        font-weight: 700;
+        font-size: 56px;
+
+
+    }
+}
+
+
+
+
+
+.section-text {
+    max-width: 216px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 72px;
+
+
+}
+
+@media screen and ((min-width: 767px)) {
+    .section-text {
+        font-size: 56px;
+        max-width: 496px;
+    }
+}
+
+@media screen and ((min-width: 1157px)) {
+    .hero-title {
         margin-bottom: 48px;
     }
+}
 
 
+
+.section-button {
+    display: block;
+    background: #4d5ae5;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 0 auto;
+
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-button:hover,
+.section-button:focus {
+    background-color: #404bbf;
+}
 
 
 
@@ -688,19 +637,6 @@ a {
 }
 
 
-@media screen and ((min-width: 767px)) {
-    .section-info {
-        padding: 120px 0;
-    }
-}
-
-@media screen and ((min-width: 1157px)) {
-    .section-info {
-        padding: 120px 0;
-    }
-}
-
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -712,7 +648,6 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
 }
 
 .info-list {
@@ -795,9 +730,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-}
-
+    color: #434455;}
 
 /* section 3 */
 
