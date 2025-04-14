@@ -536,6 +536,7 @@ a {
     text-align: center;
 }
 
+
 .section-text {
     max-width: 496px;
     margin: 0 auto 48px;
@@ -569,12 +570,19 @@ a {
 @media screen and (max-width: 1157px) {
     .section-line {
         padding: 112px 0;
+        
+        
     }
 
     .section-text {
         font-size: 40px;
     }
 }
+
+
+
+
+
 
 /* Мобільні пристрої: до 767px */
 @media screen and (max-width: 767px) {
@@ -595,7 +603,7 @@ a {
 
 .section-line {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
-    /* Шлях до картинки — зміни під свою структуру */
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -608,6 +616,67 @@ a {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg@2x.jpg');
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-line {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 320px;
+    margin: 0 auto;}
+
+@media screen and ((min-width: 767px)) {
+    .section-line {
+        padding: 120px 0;
+    }
+
+    .section-text {
+        max-width: 496px;
+    }
+
+    .section-line {
+        padding: 112px 0;
+    }
+
+    .section-text {
+        font-size: 56px;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and ((min-width: 1157px)) {
+    .section-line {
+        max-width: 1440px;
+    }
+
+    
+
+    .section-line {
+        padding: 188px 0;
+    }
+
+    .section-text {
+        margin-bottom: 48px;
+    }
+
+
+
+
+
 
 
 
@@ -643,6 +712,7 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
 }
 
 .info-list {
