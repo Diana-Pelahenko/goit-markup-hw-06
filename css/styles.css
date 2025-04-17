@@ -256,12 +256,11 @@ button {
 
 .mob-menu-list {
     display: flex;
-        flex-direction: column;
-        gap: 40px;
-        margin-bottom: 24px;
-    }
-    
-    
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    /* Додано margin-bottom для відступу між меню та адресою */
+}
 
 
 
@@ -281,15 +280,14 @@ button {
     font-style: normal;
 }
 
- 
-.mob-address-list {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        margin-bottom: 40px;
-    }
 
-    
+.mob-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
 
 .mob-address-link {
     font-weight: 500;
@@ -306,6 +304,8 @@ button {
 .mob-social-list {
     display: flex;
     gap: 40px;
+    margin-top: 40px;
+    /* Додано margin-top для відступу між адресою та соцмережами */
 }
 
 .mob-social-item {
@@ -329,12 +329,10 @@ button {
 
 
 @media screen and ((min-width: 768px)) {
-    .mobile-menu {
+    .mob-menu {
         display: none;
     }
 }
-
-
 
 
 
